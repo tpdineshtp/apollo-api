@@ -6,4 +6,7 @@ module.exports = function(app) {
 
 	app.route('/users/register')
 		.post(user.register_user)
+
+	app.route('/users/auth')
+	.post(user.authenticate_user);
 };
