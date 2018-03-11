@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = function(app) {
-	var user = require('../controllers/userController')
+	var user = require('../controllers/userController');
+	var fileHandler = require('../controllers/fileHandler');
 
 
 	app.route('/users/register')
@@ -9,4 +10,7 @@ module.exports = function(app) {
 
 	app.route('/users/auth')
 	.post(user.authenticate_user);
+
+	app.route('/download/resume')
+	.get(fileHandler.download_resume);
 };
