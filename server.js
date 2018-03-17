@@ -8,8 +8,8 @@ var express = require('express'),
 
 var cors = require('cors')
 
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/apollo-master');
+// mongoose.Promise = global.Promise;
+// mongoose.connect('mongodb://localhost/apollo-master');
 
 app.use(cors())
 app.use(morgan('dev'))
