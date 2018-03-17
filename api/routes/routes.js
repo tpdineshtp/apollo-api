@@ -17,4 +17,7 @@ module.exports = function(app) {
 
 	app.route('/contact_me')
 	.post(mailer.send_mail);
+
+	app.route('/')
+	.get(user.test_url)
 };

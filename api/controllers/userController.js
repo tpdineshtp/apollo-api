@@ -41,3 +41,7 @@ exports.authenticate_user = function(req, res) {
     }
   });
 };
+
+exports.test_url = function(req, res) {
+  res.status(200).send({});
+};
